@@ -15,11 +15,6 @@ class IntSelector:
         self.increase_button = Button(self.x, self.y, self.width, self.height,GREEN,self.increase)
         self.decrease_button = Button(self.x+self.margin, self.y, self.width, self.height,RED,self.decrease)
         self.font = pygame.font.Font('sans.ttf', 15)
-
-    # def draw(self, surface):
-    #     self.increase_button.draw(surface)
-    #     self.decrease_button.draw(surface)
-    #     self.show_current_value(surface)
     
     def show_current_value(self, surface):
         text = str(self.current_value)

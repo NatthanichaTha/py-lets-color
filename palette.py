@@ -2,7 +2,6 @@ import pygame
 from button import Button
 from constant import *
 
-
 class Palette:
     def __init__(self, x , y, color_list):
         self.x = x
@@ -28,14 +27,3 @@ class Palette:
     def draw(self, screen):
         for btn in self.button_list:
             btn.draw(screen)
-    
-    # def color_selection(self, mouse_x, mouse_y):
-    #     color_x = self.x
-    #     color_y = self.y
-    #     for color in self.color_list:
-    #         color_button = pygame.Rect(color_x, color_y, self.button_width, self.button_height)
-    #         if color_button.collidepoint(mouse_x, mouse_y):
-    #             self.current_color = color
-    #             return True 
-    #         color_x += self.button_width + self.button_margin
-    #     return False
