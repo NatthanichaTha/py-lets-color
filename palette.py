@@ -6,8 +6,8 @@ class Palette:
     def __init__(self, x , y, color_list):
         self.x = x
         self.y = y
-        self.button_width = 30
-        self.button_height = 30
+        self.button_width = 25
+        self.button_height = 25
         self.button_margin = 5
         self.color_list = color_list
         self.button_list = []
